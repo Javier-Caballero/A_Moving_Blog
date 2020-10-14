@@ -9,8 +9,8 @@ function loadContent (json) {
     let image = json.entry[i].image;
     let title = json.entry[i].title;
     let date = json.entry[i].date;
-    let content = json.entry[i].content;
-    html += `<div class="post"><img src="${image}" class="post-img" alt="image" width="600" height="400"><div class="title">${title}</div><div class="date">${date}</div><div class="body">${content}</div></div>`;
+    let body = json.entry[i].content;
+    html += `<div class="post"><img src="${image}" class="post-img" alt="image" width="600" height="400"><div class="title">${title}</div><div class="date">${date}</div><div class="body">${body}</div></div>`;
   }
   document.getElementById('content-container').innerHTML = html;
 }
