@@ -1,28 +1,45 @@
+
 #content-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    display: flex;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    padding: 10px;
 }
 
-.post-img {
-    width: 400px;
-    height: auto;
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block; 
     border-radius: 50px;
+}
+
+.img-box {
+    margin: auto;
+    width: 75%;
     padding: 20px;
 }
 
+.title, .date {
+    text-align: center;
+}
+
 .title {
-    font-style: bold;
-    font-size: 1.2em;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .date {
     font-size: .75em;
 }
 
+.body::first-letter {
+    font-weight: bolder;
+    font-size: 2em;
+}
 
+.body {
+    width: 90%;
+    margin: auto;
+    text-indent: 3ch;
+    text-align: justify;
+    font-size: 1em;
+    padding-bottom: 80px;
+}
