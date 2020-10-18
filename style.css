@@ -41,5 +41,10 @@ img {
     text-indent: 3ch;
     text-align: justify;
     font-size: 1em;
-    padding-bottom: 80px;
+    padding-bottom: 15px;
 }
+
+hr {
+    margin-bottom: 20px;
+}
+

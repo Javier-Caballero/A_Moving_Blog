@@ -13,7 +13,7 @@ function loadContent (json) {
     let title = json.entry[i].title;
     let date = json.entry[i].date;
     let body = json.entry[i].content;
-    html += `<div class="post"><div class="img-box"><img src="${image}" alt="image"></div><div class="title">${title}</div><div class="date">${date}</div><div class="body">${body}</div></div>`;
+    html += `<div class="post"><div class="img-box"><img src="${image}" alt="image"></div><div class="title">${title}</div><div class="date">${date}</div><div class="body">${body}</div></div><hr>`;
   }
   document.getElementById('content-container').innerHTML = html;
 }
