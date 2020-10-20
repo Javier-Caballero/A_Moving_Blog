@@ -21,21 +21,26 @@ img {
     margin: auto;
     width: 40%;
     border-radius: 50%;
+    animation: rotation 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
 
 header {
-    padding: 30px 10px 10px 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+    padding: 20px 10px 0px 10px;
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: powderblue;
-    border-radius: 10%;
-
+    border-radius: 25%;
 }
 
 h1 {
