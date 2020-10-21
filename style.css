@@ -14,7 +14,7 @@ img {
 .img-box {
     margin: auto;
     width: 75%;
-    padding: 20px;
+    padding: 0px;
 }
 
 #avatar {
@@ -33,13 +33,13 @@ img {
     to {
       transform: rotate(359deg);
     }
-  }
+ }
 
-header {
+.main-header {
+    background-color: powderblue;
     padding: 20px 10px 0px 10px;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: powderblue;
     border-radius: 25%;
 }
 
@@ -51,13 +51,14 @@ h3 {
     margin-top: 0px;
 }
 
-.title, .date, .body, h1, h3 {
+.title, .date, .body, h1, h2, h3 {
     text-align: center;
 }
 
 .title {
     font-weight: bold;
     font-size: 1.5em;
+    margin: 0px;
 }
 
 .date {
