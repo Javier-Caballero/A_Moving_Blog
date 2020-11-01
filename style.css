@@ -11,7 +11,14 @@ img {
     border-radius: 50px;
 }
 
-.img-box {
+.post-img {
+    margin: auto;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.img-boxz {
     margin: auto;
     width: 75%;
     padding: 0px;
@@ -88,6 +95,11 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
+    .post-img {
+        width:  300px;
+        height: 300px;
+    }
+
     .main-header {
         max-width: 100%;
         background-color: red;
@@ -95,6 +107,7 @@ hr {
         margin-top: 0%;
         margin-left: 0%;
         margin-right: 0%;
+        margin-bottom: 10%;
         border-radius: 0%;
     }
 
@@ -108,6 +121,35 @@ hr {
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
+    .main-header {
+        margin-bottom: 2%;
+    }
+
+    #content-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .post-img {
+        width:  400px;
+        height: 400px;
+    }
+    
+    .post {
+        max-width: 30%;
+        flex: 0 50%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
     
 }
