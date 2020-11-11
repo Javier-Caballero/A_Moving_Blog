@@ -173,13 +173,6 @@ hr {
         height: 400px;
     }
     
-    .post {
-        /* max-width: 30%;
-        flex: 0 50%; 
-        margin-left: 5%;
-        margin-right: 5%;*/
-    }
-
     p {
         overflow: hidden;
         text-overflow: ellipsis;
