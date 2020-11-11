@@ -9,4 +9,3 @@ CSS Animation: The avatar image on the header rotates indefinitely using CSS key
 CSS: nth-of-type is used to create a backerground color for each article. Odd nth-of-type article are light grey while even articles are light yellow.
  
 Javascript Loop: HTML content is loaded dynamically using a Javascript loop which loads a json file as an object. The loop iterates through the entries and displays them in the selected sort order. Sort selector is the icon at the top right of the screen.
-
