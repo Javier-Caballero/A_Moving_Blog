@@ -15,6 +15,18 @@
     padding: 10px;
 }
 
+.post {
+    padding-top: 15px;
+}
+
+.post:nth-of-type(even) {
+    background-color: cornsilk;
+}
+
+.post:nth-of-type(odd) {
+    background-color: rgb(211, 210, 208);
+}
+
 .img-round {
     max-width: 100%;
     max-height: 100%;
@@ -111,6 +123,16 @@ hr {
         height: 40px;
     }
 
+    #content-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .post {
+        flex: 50%;
+    }
+
     .post-img {
         width:  300px;
         height: 300px;
@@ -142,10 +164,8 @@ hr {
         margin-bottom: 2%;
     }
 
-    #content-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+    .post {
+        flex: 32%;
     }
 
     .post-img {
@@ -154,10 +174,10 @@ hr {
     }
     
     .post {
-        max-width: 30%;
-        flex: 0 50%;
+        /* max-width: 30%;
+        flex: 0 50%; 
         margin-left: 5%;
-        margin-right: 5%;
+        margin-right: 5%;*/
     }
 
     p {
