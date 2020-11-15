@@ -1,6 +1,5 @@
 This is a personal blog site which documents the experience of relocating to a new city. The blog contains dated entries along with photos. The entries are scrollable on smaller devices and become selectable on larger screens. Entries can be sorted from oldest to newest or newest to oldest.
 
-**THIS PROJECT REQUIRES A LIVE SERVER TO LOAD CONTENT**
 
 Feature requirements included in this project:
 
