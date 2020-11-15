@@ -10,6 +10,18 @@
     border: none;
 }
 
+#email-button{
+    background-image: url(img/email-icon.png);
+    background-size: cover;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+}
+
 #content-container {
     margin: auto;
     padding: 10px;
@@ -118,7 +130,7 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-    #sort-button{
+    #sort-button #email-button {
         width:  40px;
         height: 40px;
     }
@@ -160,6 +172,11 @@ hr {
 }
 
 @media screen and (min-width: 1440px) {
+    #sort-button #email-button {
+        width:  70px;
+        height: 70px;
+    }
+
     .main-header {
         margin-bottom: 2%;
     }

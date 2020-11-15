@@ -94,7 +94,7 @@ function addArticle (json, i) {
   let title = json[i].title;
   let date = json[i].date;
   let body = json[i].content;
-  return(`<article class="post" id=><header><div class="img-box"><img src="${image}" alt="image" class="post-img img-round"></div><h2 class="title">${title}</h2><div class="date">${date}</div></header><p class="body">${body}</p><hr></article>`)
+  return(`<article class="post" id="article-${i}"><header><div class="img-box"><img src="${image}" alt="image" class="post-img img-round"></div><h2 class="title">${title}</h2><div class="date">${date}</div></header><p class="body">${body}</p><hr></article>`)
 }
 
 function sortArticles () {
@@ -106,4 +106,8 @@ function sortArticles () {
     document.getElementById('sort-button').style.backgroundImage="url(img/sortNewestFirst.png)";
   }
   loadContent(jsonData);
+}
+
+joinEmailList() {
+  
 }
