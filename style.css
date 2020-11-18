@@ -129,6 +129,37 @@ hr {
     margin-bottom: 20px;
 }
 
+/* Email List Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    background-color: lightskyblue;
+    border: 5px solid black;
+  }
+  
+  /* Modal Content/Box */
+  .emailForm {
+    text-align: center;
+    
+  }
+  
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+
+/* Media Queries */
+
 @media screen and (min-width: 768px) {
     #sort-button #email-button {
         width:  40px;
@@ -152,7 +183,7 @@ hr {
 
     .main-header {
         max-width: 100%;
-        background-color: red;
+        background-color: yellow;
         padding: 0px 0px 10px 0px;
         margin-top: 0%;
         margin-left: 0%;
@@ -172,6 +203,10 @@ hr {
 }
 
 @media screen and (min-width: 1440px) {
+    .main-header {
+        background-color: red;
+    }
+
     #sort-button #email-button {
         width:  70px;
         height: 70px;

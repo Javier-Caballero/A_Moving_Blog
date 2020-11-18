@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>A Moving Blog</title>
 </head>
 <body onload="loadContent(jsonData)">
     <header class="main-header">
         <img src="img/JC_avatar.jpg" alt="avatar" id="avatar" class="img-round">
         <div id="sort-button" onclick="sortArticles()"></div>
-        <div id="email-button" onclick="joinEmailList()"></div>
+        <button id="email-button"></button>
         <h1>A Moving Blog</h1>
         <h3>The story of a cultural transplant.</h3>
     </header>
@@ -30,6 +29,21 @@
         </article>
 -->
     </main>
-    
+    <div id="emailModal" class="modal">
+        <div class="emailForm">
+          <h1>Join the Email List!</h1><br>
+          <form>
+              <label for="firstName">First name:</label><br>
+              <input type="text" id="firstName" name="firstName"><br>
+              <label for="lastName">Last name:</label><br>
+              <input type="text" id="lastName" name="lastName"><br>
+              <label for="email">Email:</label><br>
+              <input type="text" id="email" name="email"><br>
+              <input type="submit" value="Submit" id="submit-button">
+              <button id="cancel-button">Cancel</button>
+          </form>
+        </div>     
+      </div>
 </body>
+<script src="script.js"></script>
 </html>

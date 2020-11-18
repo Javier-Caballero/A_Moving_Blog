@@ -108,9 +108,19 @@ function sortArticles () {
   loadContent(jsonData);
 }
 
-function joinEmailList() {
-  console.log('Email Page');
-  document.getElementById('content-container').style.textAlign="center";
-  document.getElementById('content-container').style.display="block";
-  document.getElementById('content-container').innerHTML = `<h1>Join the Email List!</h1><br><form><label for="firstName">First name:</label><br><input type="text" id="firstName" name="firstName"><br><label for="lastName">Last name:</label><br><input type="text" id="lastName" name="lastName"><br><label for="email">Email:</label><br><input type="text" id="email" name="email"><br><input type="submit" value="Submit"></form>`;
+
+// Email List
+var emailModal = document.getElementById("emailModal");
+var emailButton = document.getElementById("email-button");
+var submitButton = document.getElementById("submit-button");
+
+
+// Display Email Modal
+emailButton.onclick = function() {
+  emailModal.style.display = "block";
+}
+
+// Submit email list
+submitButton.onclick = function() {
+  console.log("Submit button Clicked!");
 }
