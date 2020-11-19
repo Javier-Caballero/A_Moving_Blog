@@ -1,4 +1,11 @@
-This is a personal blog site which documents the experience of relocating to a new city. The blog contains dated entries along with photos. The entries are scrollable on smaller devices and become selectable on larger screens. Entries can be sorted from oldest to newest or newest to oldest.
+**Code Louisville Front End Web Development Final Project**
+
+This is a personal blog site which documents the experience of relocating to a new city. The blog contains dated entries along with photos.
+
+*Notes:*
+*The icon at the top right of the page toggles the sorting of articles by date between newest first or oldest first.*
+
+*The icon at the top left opens a modal for the user to submit their email address to an email list. Once submitted, a confirmation with the name and email address is displayed.*
 
 
 Feature requirements included in this project:
@@ -11,10 +18,4 @@ CSS: nth-of-type is used to create a background color for each article. Odd nth-
  
 Javascript Loop: HTML content is loaded dynamically using a Javascript loop. The loop iterates through the articles and displays them in the selected sort order. Sort selector is the icon at the top right of the screen.
 
-Javascript: On the email list page, three variables(firstName, lastName, email) are set by user input and then displayed on a confirmation page.
-
-
-Other notes:
-The icon at the top right of the page toggles the sorting of articles by date between newest first or oldest first.
-
-The icon at the top left opens a modal for the user to submit their email address to an email list. Once submitted, a confirmation with the name and email address is displayed.
+Javascript: Email list page opens when the mail icon at the top left is clicked. On the email list page, three variables(firstName, lastName, and email) are set by user input and then displayed on a confirmation page.
