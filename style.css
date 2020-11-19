@@ -131,9 +131,9 @@ hr {
 
 /* Email List Modal */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 10%;
     top: 10%;
     width: 80%;
@@ -141,23 +141,9 @@ hr {
     overflow: auto;
     background-color: lightskyblue;
     border: 5px solid black;
-  }
-  
-  /* Modal Content/Box */
-  .emailForm {
     text-align: center;
-    
   }
   
-  /* The Close Button */
-  .close {
-    color: black;
-    float: right;
-    font-size: 50px;
-    font-weight: bold;
-  }
-
-
 /* Media Queries */
 
 @media screen and (min-width: 768px) {

@@ -114,7 +114,6 @@ var emailModal = document.getElementById("emailModal");
 var emailButton = document.getElementById("email-button");
 var submitButton = document.getElementById("submit-button");
 
-
 // Display Email Modal
 emailButton.onclick = function() {
   emailModal.style.display = "block";
@@ -122,5 +121,27 @@ emailButton.onclick = function() {
 
 // Submit email list
 submitButton.onclick = function() {
-  console.log("Submit button Clicked!");
+  var firstName = document.getElementById("firstName").value;
+  var lastName = document.getElementById("lastName").value;
+  var email = document.getElementById("email").value;
+  let html =`<h1>Hello ${firstName} ${lastName}! Thank you for joining the Email List. You will receive weekly updates in your ${email} inbox.</h1><br><button onclick="returnButton()" id="return-button">Return</button>`;
+  document.getElementById('emailModal').innerHTML = html;
+}
+
+function returnButton() {
+  emailModal.style.display = "none";
+  let html =`<div class="emailForm">
+  <h1>Join the Email List!</h1><br>
+  <form>
+      <label for="firstName">First name:</label><br>
+      <input type="text" id="firstName" name="firstName" placeholder="Enter your first name"><br>
+      <label for="lastName">Last name:</label><br>
+      <input type="text" id="lastName" name="lastName" placeholder="Enter your last name"><br>
+      <label for="email">Email Address:</label><br>
+      <input type="text" id="email" name="email" placeholder="Enter a valid email address"><br>
+      <input type="button" value="Submit" id="submit-button">
+      <button id="return-button">Cancel</button>
+  </form>
+</div>`;
+  document.getElementById('emailModal').innerHTML = html;
 }
