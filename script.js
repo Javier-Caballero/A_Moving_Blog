@@ -139,9 +139,10 @@ function returnButton() {
       <input type="text" id="lastName" name="lastName" placeholder="Enter your last name"><br>
       <label for="email">Email Address:</label><br>
       <input type="text" id="email" name="email" placeholder="Enter a valid email address"><br>
-      <input type="button" value="Submit" id="submit-button">
+      <button id="submit-button">Submit</button>
       <button id="return-button">Cancel</button>
   </form>
 </div>`;
   document.getElementById('emailModal').innerHTML = html;
+  submitButton = document.getElementById("submit-button");
 }
