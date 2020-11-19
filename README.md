@@ -1,11 +1,11 @@
-#Code Louisville Front End Web Development Final Project
+**Code Louisville Front End Web Development Final Project**
 
 This is a personal blog site which documents the experience of relocating to a new city. The blog contains dated entries along with photos.
 
 *Notes: The icon at the top right of the page toggles the sorting of articles by date between newest first or oldest first. The icon at the top left opens a modal for the user to submit their email address to an email list. Once submitted, a confirmation with the name and email address is displayed.*
 
 
-##Feature requirements included in this project:
+**Feature requirements included in this project:**
 
 CSS Flexbox: Flexbox is used to organize content in two columns or three columns based on media queries.
 
