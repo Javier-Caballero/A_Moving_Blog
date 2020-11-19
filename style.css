@@ -211,12 +211,8 @@ hr {
         height: 400px;
     }
     
-    p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
+    body {
+        font-size: 1.5em;
     }
     
 }
