@@ -112,7 +112,6 @@ function sortArticles () {
 // Email List
 var emailModal = document.getElementById("emailModal");
 var emailButton = document.getElementById("email-button");
-var submitButton = document.getElementById("submit-button");
 
 // Display Email Modal
 emailButton.onclick = function() {
@@ -120,7 +119,7 @@ emailButton.onclick = function() {
 }
 
 // Submit email list
-submitButton.onclick = function() {
+function emailSubmit() {
   var firstName = document.getElementById("firstName").value;
   var lastName = document.getElementById("lastName").value;
   var email = document.getElementById("email").value;
@@ -139,7 +138,7 @@ function returnButton() {
       <input type="text" id="lastName" name="lastName" placeholder="Enter your last name"><br>
       <label for="email">Email Address:</label><br>
       <input type="text" id="email" name="email" placeholder="Enter a valid email address"><br>
-      <button id="submit-button">Submit</button>
+      <button id="submit-button" onclick='emailSubmit()'>Submit</button>
       <button id="return-button">Cancel</button>
   </form>
 </div>`;
